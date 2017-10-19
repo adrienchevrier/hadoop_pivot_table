@@ -1,0 +1,24 @@
+Compile maven
+mvn clean install
+
+
+Copy data on cluster
+scp -P 1021 file.csv  achevrier@m3.adaltas.com:/home/achevrier
+
+connect to server
+ssh achevrier@m3.adaltas.com -p 1021
+
+Create directory on hadoop
+hadoop fs -mkdir Mydirectory
+
+Put file on directory
+hadoop -put *.csv In
+
+Get file 
+hadoop fs -get /<hdfs path> /<local machime path>     
+
+remove directory 
+hadoop fs rm -r Mydirectory
+
+run job
+hadoop jar ece.lab.pivot-1.0-SNAPSHOT.jar PivotMapper In/data.csv Out/pivot/

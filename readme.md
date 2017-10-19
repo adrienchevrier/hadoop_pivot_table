@@ -1,4 +1,3 @@
-# hadoop_pivot_table
 Pivot table on hadoop Cluster
 Adrien Chevrier
 Pablo Tabales

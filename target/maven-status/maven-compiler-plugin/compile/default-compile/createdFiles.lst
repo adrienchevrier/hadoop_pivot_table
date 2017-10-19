@@ -1,0 +1,6 @@
+PivotMapper$TokenizerMapper.class
+PivotMapper.class
+PivotMapper$IntSumReducer.class
+WordCount.class
+WordCount$IntSumReducer.class
+WordCount$TokenizerMapper.class
